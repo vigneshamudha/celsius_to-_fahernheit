@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>length convertor</title>
+        <link rel="stylesheet" href="style1.css">
+        <script src="./main.js"></script>
+
+</head>
+<body>
+        <div id="wrapper">
+                <h2>Celcius to fharenheit</h2>
+                <div class="inputdiv">
+                 <input type="text"id="input"placeholder="celcius in value">
+                </div>
+                <div>
+                        <button type="submit" onclick="double()">convert to fahrenheit</button>
+                </div>
+                <div id="result">
+
+                </div>
+                
+        
+        </div>
+        <script>
+                function double(){
+                        const cel= Number(document.getElementById("input").value)
+       let fah=(9/5*(cel+32))
+       let result=document.getElementById("result")
+       result.innerHTML=fah.toFixed(2)+" fharenheit"
+
+                }
+        </script>
+
+
+       <!--<h1 id="vicky"></h1>
+       <script>
+        let mom=document.getElementById("vicky")
+        mom.innerHTML=("welcome to our home..")
+       </script>-->
+
+</body>
+</html>
